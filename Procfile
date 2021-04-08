@@ -1,1 +1,1 @@
-web: gunicorn crop.wsgi
+web:gunicorn crop.wsgi
