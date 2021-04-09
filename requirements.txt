@@ -22,7 +22,6 @@ pathspec==0.8.1
 Pillow==8.0.1
 pyparsing==2.4.7
 pytz==2020.4
-psycopg2-binary==2.8.5
 regex==2020.10.28
 requests==2.24.0
 ruamel.yaml==0.16.12
