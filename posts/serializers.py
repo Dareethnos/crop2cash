@@ -13,6 +13,7 @@ class PostCreateUpdateSerializer(serializers.ModelSerializer):
             "title",
             "description",
             "body",
+            "price",
             "image"
         ]
 
@@ -72,6 +73,7 @@ class PostDetailSerializer(serializers.ModelSerializer):
             "title",
             "description",
             "body",
+            "price",
             "author",
             "image",
             "created_at",
