@@ -8,13 +8,10 @@ class UserSerializer(serializers.ModelSerializer):
     id = serializers.PrimaryKeyRelatedField(read_only=True)
     password = serializers.CharField(min_length=8, max_length=32, write_only=True)
     email = serializers.EmailField(max_length=50, allow_blank=False)
-    lastname = serializers.CharField(max_length=20)
-    firstname = serializers.CharField(max_length=20)
-    state = serializers.CharField(max_length=23)
     
     class Meta:
         model = User
-        fields = ["id", "lastname", "firstname", "state", "username", "email", "password",]
+        fields = ["id", "username", "email", "password",]
 
     def create(self, validated_data):
         username = validated_data["username"]
